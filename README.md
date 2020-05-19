@@ -1,3 +1,5 @@
+***This modified branch of TFC is licensed under [GNU GPL v3](https://github.com/Deadrik/TFCraft/blob/master/license.txt)
+
 TerraFirmaCraft
 =======
 
