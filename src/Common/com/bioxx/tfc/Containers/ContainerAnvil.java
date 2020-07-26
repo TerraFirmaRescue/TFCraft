@@ -177,6 +177,6 @@ public class ContainerAnvil extends ContainerTFC
 	public void onContainerClosed(EntityPlayer par1EntityPlayer)
 	{
 //		super.onContainerClosed(par1EntityPlayer);
-		anvil.closeInventory();
+//		anvil.closeInventory();
 	}
 }

@@ -16,6 +16,7 @@ import com.bioxx.tfc.Core.TFC_Achievements;
 import com.bioxx.tfc.Core.TFC_Climate;
 import com.bioxx.tfc.Core.TFC_Core;
 import com.bioxx.tfc.Core.TFC_Time;
+import com.bioxx.tfc.Core.WeatherManager;
 import com.bioxx.tfc.Food.CropIndex;
 import com.bioxx.tfc.Food.CropManager;
 import com.bioxx.tfc.api.TFCBlocks;

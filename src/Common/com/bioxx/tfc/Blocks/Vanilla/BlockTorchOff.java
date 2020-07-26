@@ -3,6 +3,7 @@ package com.bioxx.tfc.Blocks.Vanilla;
 import java.util.ArrayList;
 import java.util.Random;
 
+import com.bioxx.tfc.Core.WeatherManager;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;

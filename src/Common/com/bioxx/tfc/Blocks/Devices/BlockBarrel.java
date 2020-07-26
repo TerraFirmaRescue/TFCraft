@@ -343,11 +343,6 @@ public class BlockBarrel extends BlockTerraContainer
 					|| equippedItem.getItem() instanceof IFluidContainerItem && ((IFluidContainerItem)equippedItem.getItem()).getFluid(equippedItem) != null)
 					&& !te.getSealed())
 			{
-				if (equippedItem.hasTagCompound())
-				{
-					return false;
-				}
-
 				ItemStack tmp = equippedItem.copy();
 				tmp.stackSize = 1;
 				ItemStack is = te.addLiquid(tmp);
@@ -381,11 +376,6 @@ public class BlockBarrel extends BlockTerraContainer
 			}
 			else if(FluidContainerRegistry.isEmptyContainer(equippedItem) || equippedItem.getItem() instanceof IFluidContainerItem)
 			{
-				if (equippedItem.hasTagCompound())
-				{
-					return false;
-				}
-
 				ItemStack tmp = equippedItem.copy();
 				tmp.stackSize = 1;
 				ItemStack is = te.removeLiquid(tmp);

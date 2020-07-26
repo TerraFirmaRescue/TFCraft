@@ -58,7 +58,6 @@ public class ChunkData
 		cropInfestation = tag.getInteger("cropInfestation");
 
 		fishPop = Math.min(tag.getFloat("fishPopulation"),FISH_POP_MAX);
-		rainfallMap = new DataLayer[256];
 	}
 
 	public NBTTagCompound getTag()
