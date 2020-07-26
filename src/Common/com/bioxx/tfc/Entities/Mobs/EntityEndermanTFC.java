@@ -2,9 +2,11 @@ package com.bioxx.tfc.Entities.Mobs;
 
 import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.entity.monster.EntityEnderman;
+import net.minecraft.util.MathHelper;
 import net.minecraft.world.World;
 
 import com.bioxx.tfc.Core.TFC_MobData;
+import com.bioxx.tfc.Core.WeatherManager;
 import com.bioxx.tfc.api.Enums.EnumDamageType;
 import com.bioxx.tfc.api.Interfaces.ICausesDamage;
 import com.bioxx.tfc.api.Interfaces.IInnateArmor;

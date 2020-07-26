@@ -2,14 +2,18 @@ package com.bioxx.tfc.TileEntities;
 
 import java.util.Random;
 
+import net.minecraft.block.BlockGlass;
+import net.minecraft.block.BlockStainedGlass;
 import net.minecraft.entity.item.EntityItem;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.inventory.IInventory;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.nbt.NBTTagList;
+import net.minecraftforge.common.util.ForgeDirection;
 
 import com.bioxx.tfc.Core.TFC_Core;
+import com.bioxx.tfc.Core.WeatherManager;
 import com.bioxx.tfc.Items.ItemBloom;
 import com.bioxx.tfc.Items.ItemMeltedMetal;
 import com.bioxx.tfc.api.*;

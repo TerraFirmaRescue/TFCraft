@@ -2,7 +2,6 @@ package com.bioxx.tfc.Core.Player;
 
 import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.entity.player.EntityPlayerMP;
-import net.minecraft.inventory.ICrafting;
 
 import net.minecraftforge.event.entity.item.ItemTossEvent;
 
@@ -12,7 +11,6 @@ import cpw.mods.fml.common.gameevent.PlayerEvent.PlayerLoggedInEvent;
 import cpw.mods.fml.common.gameevent.PlayerEvent.PlayerRespawnEvent;
 import cpw.mods.fml.common.network.FMLNetworkEvent.ClientConnectedToServerEvent;
 import cpw.mods.fml.common.network.FMLNetworkEvent.ServerDisconnectionFromClientEvent;
-import cpw.mods.fml.common.gameevent.PlayerEvent.PlayerChangedDimensionEvent;
 
 import com.bioxx.tfc.TerraFirmaCraft;
 import com.bioxx.tfc.Core.TFC_Core;
@@ -112,18 +110,6 @@ public class PlayerTracker
 	{
 		if(event.entityItem == null)
 			event.setCanceled(true);
-	}
-
-	@SubscribeEvent
-	public void onPlayerChangedDimension(cpw.mods.fml.common.gameevent.PlayerEvent.PlayerChangedDimensionEvent event)  {
-		try
-		{
-			event.player.inventoryContainer.addCraftingToCrafters((ICrafting)event.player);
-		}
-		catch (IllegalArgumentException exception)
-		{
-			//LogHelper.error(ReferenceTAPI.MOD_NAME, "Inventory has already be resync'd");
-		}
 	}
 }
 

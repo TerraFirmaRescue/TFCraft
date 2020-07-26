@@ -1,7 +1,9 @@
 package com.bioxx.tfc.Core;
 
+
 import java.util.Random;
 
+import cpw.mods.fml.common.Loader;
 import net.minecraft.world.World;
 
 public class WeatherManager
